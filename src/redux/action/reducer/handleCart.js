@@ -1,6 +1,4 @@
-import React from 'react'
-
-const handleCart=(state = cart, action)=> {
+const handleCart=(state = [], action)=> {
     const product= action.payload;
     switch(action.type){
         case "ADDITEM":
@@ -15,7 +13,7 @@ const handleCart=(state = cart, action)=> {
                 const product=action.payload;
                 return [
                     ...state,
-                    {
+                    { 
                         ...product,
                         qty:1,
                     }
@@ -34,7 +32,6 @@ const handleCart=(state = cart, action)=> {
         default:
             return state;
             break;
-
     }
 }
 

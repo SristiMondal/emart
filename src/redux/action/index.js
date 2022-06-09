@@ -1,8 +1,17 @@
-import handleCart from "./reducer/handleCart";
-import {combineReducers} from 'redux';
 
-const rootReducer=combineReducers({
-    handleCart,
-})
+//for Add Item to Cart
+export const addCart=(product)=>{
+    return{
+        type:"ADDITEM",
+        payload: product
+    }
+}
 
-export default rootReducer;
+//for Delete Item from Cart
+export const delCart=(product)=>{
+    return{
+        type:"DELITEM",
+        payload: product
+    }
+}
+
