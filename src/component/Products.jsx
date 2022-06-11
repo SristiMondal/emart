@@ -17,7 +17,6 @@ function Products() {
         setLoading(false);
       }
     };
-    // console.log(data);
     getProducts();
   }, []);
 
@@ -54,7 +53,6 @@ const filterProduct = (cat) => {
           <button className="btn btn-outline-dark me-2" onClick={()=>filterProduct("electronics")}>Electronics</button>
         </div>
         {filter.map((product) => {
-          console.log("filter.title")
           return (
             <>
               <div className="col-md-3 mb-4">

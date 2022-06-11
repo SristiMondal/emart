@@ -1,4 +1,3 @@
-
 //for Add Item to Cart
 export const addCart=(product)=>{
     return{
@@ -6,7 +5,6 @@ export const addCart=(product)=>{
         payload: product
     }
 }
-
 //for Delete Item from Cart
 export const delCart=(product)=>{
     return{
